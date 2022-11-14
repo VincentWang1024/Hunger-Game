@@ -11,6 +11,7 @@ public class BgkFood implements Food {
         this.quantity = quantity;
     }
 
+    @Override
     public int getQuantity() {
         return quantity;
     }

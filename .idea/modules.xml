@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/BgkBaggot/bgkBaggot.iml" filepath="$PROJECT_DIR$/BgkBaggot/bgkBaggot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bgkBaggot/bgkBaggot.iml" filepath="$PROJECT_DIR$/bgkBaggot/bgkBaggot.iml" />
       <module fileurl="file://$PROJECT_DIR$/bgkGrafton/bgkGrafton.iml" filepath="$PROJECT_DIR$/bgkGrafton/bgkGrafton.iml" />
       <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/hunger-game.iml" filepath="$PROJECT_DIR$/.idea/hunger-game.iml" />

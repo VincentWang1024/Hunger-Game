@@ -3,6 +3,7 @@ package service.baggot;
 import service.core.*;
 
 import java.rmi.RemoteException;
+import java.util.Random;
 
 /**
  * Implementation of the AuldFellas insurance quotation service.
@@ -12,9 +13,11 @@ import java.rmi.RemoteException;
  */
 public class BaggotService extends AbstractFoodService {
 
+	private Random random = new Random();
+
 	@Override
-	public Food generateFood(HungerInfo info) throws RemoteException {
-		int quantity = makeFood(2,50);
-		return new BgkFood(quantity);
-	}
+		public Food makeFood(HungerInfo info) throws RemoteException {
+			int productivity= random.nextInt(info.getReqQuantity());
+			return new BgkFood(productivity);
+		}
 }

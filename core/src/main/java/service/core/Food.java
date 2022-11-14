@@ -4,4 +4,5 @@ import java.io.Serializable;
 
 public interface Food extends Serializable {
 
+    int getQuantity();
 }

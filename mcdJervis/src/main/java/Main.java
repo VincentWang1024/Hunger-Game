@@ -11,13 +11,13 @@ import service.message.Init;
 public class Main {
     public static void main(String[] args) {
         ActorSystem system = ActorSystem.create();
-        ActorRef ref = system.actorOf(Props.create(Branch.class), "mcdStillorgan");
+        ActorRef ref = system.actorOf(Props.create(Branch.class), "mcdJervis");
         ref.tell(new Init(new JervisService()), null);
         ActorSelection selection =
             system.actorSelection("akka.tcp://default@127.0.0.1:2551/user/vendor");
         selection.tell("register", ref);
 
-        System.out.println("mcdStillorgan registered!");
+        System.out.println("mcdJervis registered!");
 
         //TODO test data
         ref.tell(new FoodRequest(1, new HungerInfo(5)),null);
