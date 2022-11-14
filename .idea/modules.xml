@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/BgkBaggot/bgkBaggot.iml" filepath="$PROJECT_DIR$/BgkBaggot/bgkBaggot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bgkGrafton/bgkGrafton.iml" filepath="$PROJECT_DIR$/bgkGrafton/bgkGrafton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/hunger-game.iml" filepath="$PROJECT_DIR$/.idea/hunger-game.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mcdJervis/mcdJervis.iml" filepath="$PROJECT_DIR$/mcdJervis/mcdJervis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mcdStiilorgan/mcdStiilorgan.iml" filepath="$PROJECT_DIR$/mcdStiilorgan/mcdStiilorgan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mcdTempleBar/mcdTempleBar.iml" filepath="$PROJECT_DIR$/mcdTempleBar/mcdTempleBar.iml" />
+    </modules>
+  </component>
+</project>
