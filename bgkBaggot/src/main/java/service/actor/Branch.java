@@ -18,7 +18,7 @@ public class Branch extends AbstractActor {
                 .match(FoodRequest.class,
                         msg -> {
                             Food food = service.makeFood(msg.getHungerInfo());
-                            System.out.println("request quantity:"+msg.getHungerInfo().getReqQuantity());
+                            System.out.println("request quantity: "+msg.getHungerInfo().getReqQuantity());
                             System.out.println("response quantity: "+food.getQuantity());
                             getSender().tell(
                                     new FoodResponse(msg.getId(), food), getSelf());

@@ -14,6 +14,8 @@
         <module>mcdTempleBar</module>
         <module>bgkBaggot</module>
         <module>bgkGrafton</module>
+        <module>BGKFranchise</module>
+        <module>MCDFranchise</module>
     </modules>
 
     <properties>

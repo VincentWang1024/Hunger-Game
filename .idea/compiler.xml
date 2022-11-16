@@ -7,19 +7,24 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="bgkGrafton" />
+        <module name="bgkfranchise" />
         <module name="core" />
+        <module name="MCDFranchise" />
         <module name="mcdJervis" />
+        <module name="bgkBaggot" />
         <module name="mcdTempleBar" />
         <module name="mcdStiilorgan" />
-        <module name="bgkBaggot" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="bgkBaggot" target="1.8" />
+      <module name="bgkfranchise" target="1.8" />
       <module name="bgkGrafton" target="1.8" />
       <module name="core" target="8" />
       <module name="core (1) (lab6)" target="8" />
       <module name="hunger-game" target="8" />
+      <module name="MCDFranchise" target="1.8" />
+      <module name="mcdfranchise" target="1.8" />
       <module name="mcdJervis" target="1.8" />
       <module name="mcdStiilorgan" target="1.8" />
       <module name="mcdTempleBar" target="1.8" />

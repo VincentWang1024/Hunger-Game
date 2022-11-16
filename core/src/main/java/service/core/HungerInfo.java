@@ -9,6 +9,9 @@ public class HungerInfo implements Serializable {
         this.reqQuantity = reqQuantity;
     }
 
+    public HungerInfo() {
+    }
+
     public int getReqQuantity() {
         return reqQuantity;
     }

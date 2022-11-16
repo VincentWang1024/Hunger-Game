@@ -1,9 +1,14 @@
 service/messages/MySerializable.class
 service/core/FoodService.class
 service/core/HungerInfo.class
+service/messages/NgoRequest.class
+service/messages/RequestDeadline.class
 service/core/BgkFood.class
-service/core/McdFood.class
-service/messages/FoodResponse.class
 service/messages/FoodRequest.class
 service/core/AbstractFoodService.class
+service/core/FranchiseService.class
+service/messages/FranchiseRequest.class
+service/core/McdFood.class
+service/messages/FoodResponse.class
+service/messages/FranchiseResponse.class
 service/core/Food.class

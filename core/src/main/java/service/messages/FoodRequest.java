@@ -11,6 +11,9 @@ public class FoodRequest implements MySerializable {
         this.hungerInfo = hungerInfo;
     }
 
+    public FoodRequest() {
+    }
+
     public int getId() {
         return id;
     }
