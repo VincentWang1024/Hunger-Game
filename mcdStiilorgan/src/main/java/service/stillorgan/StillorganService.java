@@ -1,25 +1,25 @@
 package service.stillorgan;
 
-import service.core.*;
+import service.core.AbstractFoodService;
 
-import java.rmi.RemoteException;
-import java.util.Random;
-
-/**
- * Implementation of the AuldFellas insurance quotation service.
- * 
- * @author Rem
- *
- */
 public class StillorganService extends AbstractFoodService {
 
-	private Random random = new Random();
+	String serviceName;
 
-
-
-	@Override
-	public Food makeFood(HungerInfo info) throws RemoteException {
-		int productivity= random.nextInt(info.getReqQuantity());
-		return new McdFood(productivity);
+	public StillorganService(String serviceName) {
+		this.serviceName = serviceName;
 	}
+
+	public void setServiceName(String serviceName) {
+		this.serviceName = serviceName;
+	}
+
+	public String getServiceName() {
+		return serviceName;
+	}
+
+	public int generateFood() {
+		return getFoodQuantity();
+	}
+
 }

@@ -1,17 +1,19 @@
 import akka.actor.ActorRef;
 import akka.actor.ActorSystem;
 import akka.actor.Props;
-import service.core.HungerInfo;
 import service.messages.FranchiseRequest;
-import service.actor.MacdonaldActor;
+import service.messages.Init;
+
+import service.actor.MCDActor;
+import service.mcd.MCDService;;
 
 public class Main {
     public static void main(String[] args) throws InterruptedException {
         ActorSystem system = ActorSystem.create();
-        ActorRef ref = system.actorOf(Props.create(MacdonaldActor.class), "mcdfranchise");
+        ActorRef ref = system.actorOf(Props.create(MCDActor.class), "mcdfranchise");
+        ref.tell(new Init(new MCDService("MCD")), ref);
 
-        //test
-        Thread.sleep(10000);
-        ref.tell(new FranchiseRequest(new HungerInfo(20)),null);
+        Thread.sleep(20000);
+        ref.tell(new FranchiseRequest(), ref);
     }
 }

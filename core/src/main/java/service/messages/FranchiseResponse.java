@@ -1,38 +1,39 @@
 package service.messages;
 
-import service.core.Food;
-import service.core.HungerInfo;
-
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
-public class FranchiseResponse implements MySerializable {
-    private HungerInfo info;
-    private ArrayList<Food> list;
+public class FranchiseResponse {
+    String franchiseName;
+    ArrayList<FoodResponse> foodResponse = new ArrayList<FoodResponse>();
 
     public FranchiseResponse() {
     }
 
-    public FranchiseResponse(HungerInfo info, ArrayList<Food> list) {
-        this.info = info;
-        this.list = list;
+    public FranchiseResponse(String franchiseName, ArrayList<FoodResponse> foodResponse) {
+        this.franchiseName = franchiseName;
+        this.foodResponse = foodResponse;
     }
 
-
-    public HungerInfo getInfo() {
-        return info;
+    public List<FoodResponse> getFoodResponse() {
+        return foodResponse;
     }
 
-    public void setInfo(HungerInfo info) {
-        this.info = info;
+    public void setFoodResponse(ArrayList<FoodResponse> foodResponse) {
+        this.foodResponse = foodResponse;
     }
 
-    public ArrayList<Food> getList() {
-        return list;
+    public FranchiseResponse(String franchiseName) {
+        this.franchiseName = franchiseName;
+
     }
 
-    public void setList(ArrayList<Food> list) {
-        this.list = list;
+    public String getFranchiseName() {
+        return franchiseName;
     }
+
+    public void setFranchiseName(String franchiseName) {
+        this.franchiseName = franchiseName;
+    }
+
 }

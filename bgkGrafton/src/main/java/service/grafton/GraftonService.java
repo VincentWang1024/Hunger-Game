@@ -1,9 +1,6 @@
 package service.grafton;
 
-import service.core.*;
-
-import java.rmi.RemoteException;
-import java.util.Random;
+import service.core.AbstractFoodService;
 
 /**
  * Implementation of the AuldFellas insurance quotation service.
@@ -12,11 +9,24 @@ import java.util.Random;
  *
  */
 public class GraftonService extends AbstractFoodService {
-	private Random random = new Random();
 
-	@Override
-		public Food makeFood(HungerInfo info) throws RemoteException {
-			int productivity= random.nextInt(info.getReqQuantity());
-			return new BgkFood(productivity);
+	String serviceName;
+
+	public GraftonService(String serviceName) {
+		this.serviceName = serviceName;
+
 	}
+
+	public void setServiceName(String serviceName) {
+		this.serviceName = serviceName;
+	}
+
+	public String getServiceName() {
+		return serviceName;
+	}
+
+	public int generateFood() {
+		return getFoodQuantity();
+	}
+
 }

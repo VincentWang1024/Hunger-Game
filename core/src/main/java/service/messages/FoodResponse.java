@@ -1,25 +1,18 @@
 package service.messages;
 
-import com.fasterxml.jackson.annotation.JsonCreator;
-import com.fasterxml.jackson.annotation.JsonSubTypes;
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
-import service.core.BgkFood;
-import service.core.Food;
-import service.core.HungerInfo;
-import service.core.McdFood;
-
 public class FoodResponse implements MySerializable {
-    private int id;
-    private Food food;
-
-    @JsonCreator
-    public FoodResponse(int id, Food food) {
-        this.id = id;
-        this.food = food;
-    }
-
+    int id;
+    String name;
+    int foodQuantity;
 
     public FoodResponse() {
+
+    }
+
+    public FoodResponse(int id, String name, int foodQuantity) {
+        this.id = id;
+        this.name = name;
+        this.foodQuantity = foodQuantity;
     }
 
     public int getId() {
@@ -30,11 +23,20 @@ public class FoodResponse implements MySerializable {
         this.id = id;
     }
 
-    public Food getFood() {
-        return food;
+    public String getName() {
+        return name;
     }
 
-    public void setFood(Food food) {
-        this.food = food;
+    public void setName(String name) {
+        this.name = name;
     }
+
+    public int getFoodQuantity() {
+        return foodQuantity;
+    }
+
+    public void setFoodQuantity(int foodQuantity) {
+        this.foodQuantity = foodQuantity;
+    }
+
 }

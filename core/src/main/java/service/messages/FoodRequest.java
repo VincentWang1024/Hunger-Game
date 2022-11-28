@@ -1,17 +1,24 @@
 package service.messages;
 
-import service.core.HungerInfo;
-
 public class FoodRequest implements MySerializable {
     private int id;
-    private HungerInfo hungerInfo;
+    String name;
 
-    public FoodRequest(int id, HungerInfo hungerInfo) {
+    
+    public FoodRequest(int id) {
         this.id = id;
-        this.hungerInfo = hungerInfo;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public FoodRequest() {
+
     }
 
     public int getId() {
@@ -20,13 +27,5 @@ public class FoodRequest implements MySerializable {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public HungerInfo getHungerInfo() {
-        return hungerInfo;
-    }
-
-    public void setHungerInfo(HungerInfo hungerInfo) {
-        this.hungerInfo = hungerInfo;
     }
 }

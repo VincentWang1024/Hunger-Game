@@ -2,15 +2,17 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/MCDFranchise/MCDFranchise.iml" filepath="$PROJECT_DIR$/MCDFranchise/MCDFranchise.iml" />
       <module fileurl="file://$PROJECT_DIR$/bgkBaggot/bgkBaggot.iml" filepath="$PROJECT_DIR$/bgkBaggot/bgkBaggot.iml" />
       <module fileurl="file://$PROJECT_DIR$/bgkGrafton/bgkGrafton.iml" filepath="$PROJECT_DIR$/bgkGrafton/bgkGrafton.iml" />
       <module fileurl="file://$PROJECT_DIR$/BGKFranchise/bgkfranchise.iml" filepath="$PROJECT_DIR$/BGKFranchise/bgkfranchise.iml" />
+      <module fileurl="file://$PROJECT_DIR$/broker/broker.iml" filepath="$PROJECT_DIR$/broker/broker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/client/client.iml" filepath="$PROJECT_DIR$/client/client.iml" />
       <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/hunger-game.iml" filepath="$PROJECT_DIR$/.idea/hunger-game.iml" />
       <module fileurl="file://$PROJECT_DIR$/mcdJervis/mcdJervis.iml" filepath="$PROJECT_DIR$/mcdJervis/mcdJervis.iml" />
       <module fileurl="file://$PROJECT_DIR$/mcdStiilorgan/mcdStiilorgan.iml" filepath="$PROJECT_DIR$/mcdStiilorgan/mcdStiilorgan.iml" />
       <module fileurl="file://$PROJECT_DIR$/mcdTempleBar/mcdTempleBar.iml" filepath="$PROJECT_DIR$/mcdTempleBar/mcdTempleBar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MCDFranchise/mcdfranchise.iml" filepath="$PROJECT_DIR$/MCDFranchise/mcdfranchise.iml" />
     </modules>
   </component>
 </project>

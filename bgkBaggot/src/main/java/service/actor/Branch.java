@@ -1,27 +1,36 @@
 package service.actor;
 
 import akka.actor.AbstractActor;
-import service.core.Food;
-import service.core.FoodService;
-import service.message.Init;
 import service.messages.FoodRequest;
 import service.messages.FoodResponse;
+import service.baggot.BaggotService;
 
 public class Branch extends AbstractActor {
-    private FoodService service;
-    @Override
-    public AbstractActor.Receive createReceive() {
+        private String branchName;
+        private int foodQuantity;
 
-        return receiveBuilder()
-                .match(Init.class,
-                        msg -> service = msg.service)
-                .match(FoodRequest.class,
-                        msg -> {
-                            Food food = service.makeFood(msg.getHungerInfo());
-                            System.out.println("request quantity: "+msg.getHungerInfo().getReqQuantity());
-                            System.out.println("response quantity: "+food.getQuantity());
-                            getSender().tell(
-                                    new FoodResponse(msg.getId(), food), getSelf());
-                }).build();
-    }
+        @Override
+        public AbstractActor.Receive createReceive() {
+
+                return receiveBuilder()
+                                .match(BaggotService.class,
+                                                msg -> {
+
+                                                        System.out.println("Branch.FoodService");
+                                                        System.out.println("Service name " + msg.getServiceName());
+                                                        System.out.println("Food Quantity :" + msg.getFoodQuantity());
+
+                                                        branchName = msg.getServiceName();
+                                                        foodQuantity = msg.getFoodQuantity();
+
+                                                })
+                                .match(FoodRequest.class,
+                                                msg -> {
+                                                        System.out.println("Sending Food Response : ");
+                                                        getSender().tell(new FoodResponse(msg.getId(), branchName,
+                                                                        foodQuantity), getSender());
+
+                                                })
+                                .build();
+        }
 }
