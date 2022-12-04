@@ -1,6 +1,7 @@
 package service.burgerking;
 
-public class BQService {
+
+public class BQService   {
 
     String franchiseName;
 
@@ -10,7 +11,6 @@ public class BQService {
 
     public void setFranchiseName(String franchiseName) {
         this.franchiseName = franchiseName;
-
     }
 
     public String getFranchiseName() {

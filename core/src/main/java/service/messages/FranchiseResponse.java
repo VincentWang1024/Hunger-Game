@@ -1,11 +1,11 @@
 package service.messages;
 
+
 import java.util.ArrayList;
-import java.util.List;
 
 public class FranchiseResponse {
-    String franchiseName;
-    ArrayList<FoodResponse> foodResponse = new ArrayList<FoodResponse>();
+    private String franchiseName;
+    private ArrayList<FoodResponse> foodResponse;
 
     public FranchiseResponse() {
     }
@@ -15,7 +15,7 @@ public class FranchiseResponse {
         this.foodResponse = foodResponse;
     }
 
-    public List<FoodResponse> getFoodResponse() {
+    public ArrayList<FoodResponse> getFoodResponse() {
         return foodResponse;
     }
 

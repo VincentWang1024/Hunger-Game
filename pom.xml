@@ -16,8 +16,8 @@
         <module>bgkGrafton</module>
         <module>BGKFranchise</module>
         <module>MCDFranchise</module>
-        <module>broker</module>
-        <module>client</module>
+        <module>Broker</module>
+        <module>NgoClient</module>
     </modules>
 
     <properties>

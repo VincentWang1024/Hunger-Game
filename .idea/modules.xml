@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/hypermats-traffic-config/Broker.iml" filepath="$PROJECT_DIR$/hypermats-traffic-config/Broker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hypermats-junction-basic/NgoClient.iml" filepath="$PROJECT_DIR$/hypermats-junction-basic/NgoClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/bgkBaggot/bgkBaggot.iml" filepath="$PROJECT_DIR$/bgkBaggot/bgkBaggot.iml" />
       <module fileurl="file://$PROJECT_DIR$/bgkGrafton/bgkGrafton.iml" filepath="$PROJECT_DIR$/bgkGrafton/bgkGrafton.iml" />
       <module fileurl="file://$PROJECT_DIR$/BGKFranchise/bgkfranchise.iml" filepath="$PROJECT_DIR$/BGKFranchise/bgkfranchise.iml" />
-      <module fileurl="file://$PROJECT_DIR$/broker/broker.iml" filepath="$PROJECT_DIR$/broker/broker.iml" />
-      <module fileurl="file://$PROJECT_DIR$/client/client.iml" filepath="$PROJECT_DIR$/client/client.iml" />
       <module fileurl="file://$PROJECT_DIR$/core/core.iml" filepath="$PROJECT_DIR$/core/core.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/hunger-game.iml" filepath="$PROJECT_DIR$/.idea/hunger-game.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NgoClient/hypermats-junction-basic.iml" filepath="$PROJECT_DIR$/NgoClient/hypermats-junction-basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Broker/hypermats-traffic-config.iml" filepath="$PROJECT_DIR$/Broker/hypermats-traffic-config.iml" />
       <module fileurl="file://$PROJECT_DIR$/mcdJervis/mcdJervis.iml" filepath="$PROJECT_DIR$/mcdJervis/mcdJervis.iml" />
       <module fileurl="file://$PROJECT_DIR$/mcdStiilorgan/mcdStiilorgan.iml" filepath="$PROJECT_DIR$/mcdStiilorgan/mcdStiilorgan.iml" />
       <module fileurl="file://$PROJECT_DIR$/mcdTempleBar/mcdTempleBar.iml" filepath="$PROJECT_DIR$/mcdTempleBar/mcdTempleBar.iml" />

@@ -7,7 +7,7 @@
 
     <properties>
         <main.class>Main</main.class>
-        <akka.version>2.6.0-M8</akka.version>
+        <akka.version>2.6.8</akka.version>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
