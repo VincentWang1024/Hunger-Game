@@ -3,21 +3,24 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>project</groupId>
-    <artifactId>hunger-game</artifactId>
+
+
+    <groupId>lab5</groupId>
+    <artifactId>quoco-rest</artifactId>
     <packaging>pom</packaging>
     <version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>core</module>
-        <module>mcdStiilorgan</module>
-        <module>mcdJervis</module>
         <module>mcdTempleBar</module>
-        <module>bgkBaggot</module>
+        <module>client</module>
+        <module>mcdJervis</module>
+        <module>mcdStillorgan</module>
+        <module>McdFranchise</module>
         <module>bgkGrafton</module>
-        <module>BGKFranchise</module>
-        <module>MCDFranchise</module>
-        <module>Broker</module>
-        <module>NgoClient</module>
+        <module>bgkBaggot</module>
+        <module>BgkFranchise</module>
+        <module>broker</module>
+<!--        <module>exception</module>-->
     </modules>
 
     <properties>

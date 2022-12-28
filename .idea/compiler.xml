@@ -12,7 +12,9 @@
         <module name="hypermats-junction-basic" />
         <module name="bgkBaggot" />
         <module name="hypermats-traffic-config" />
+        <module name="mcdStillorgan" />
         <module name="mcdfranchise" />
+        <module name="broker" />
         <module name="mcdTempleBar" />
         <module name="bgkGrafton" />
         <module name="core" />
@@ -25,6 +27,7 @@
       <module name="bgkfranchise" target="1.8" />
       <module name="bgkGrafton" target="1.8" />
       <module name="Broker" target="1.8" />
+      <module name="broker" target="1.8" />
       <module name="client" target="1.8" />
       <module name="core" target="8" />
       <module name="core (1) (lab6)" target="8" />
@@ -36,6 +39,7 @@
       <module name="MCDFranchise" target="1.8" />
       <module name="mcdJervis" target="1.8" />
       <module name="mcdStiilorgan" target="1.8" />
+      <module name="mcdStillorgan" target="1.8" />
       <module name="mcdTempleBar" target="1.8" />
       <module name="ngo" target="1.8" />
       <module name="NgoClient" target="1.8" />
@@ -45,9 +49,17 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Broker" options="-parameters" />
       <module name="NgoClient" options="-parameters" />
+      <module name="bgkBaggot" options="-parameters" />
+      <module name="bgkGrafton" options="-parameters" />
+      <module name="bgkfranchise" options="-parameters" />
+      <module name="broker" options="-parameters" />
       <module name="client" options="-parameters" />
       <module name="hypermats-junction-basic" options="-parameters" />
       <module name="hypermats-traffic-config" options="-parameters" />
+      <module name="mcdJervis" options="-parameters" />
+      <module name="mcdStillorgan" options="-parameters" />
+      <module name="mcdTempleBar" options="-parameters" />
+      <module name="mcdfranchise" options="-parameters" />
       <module name="ngo" options="-parameters" />
     </option>
   </component>
