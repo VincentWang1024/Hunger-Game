@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="bgkGrafton" />
+        <module name="core" />
+        <module name="BgkFranchise" />
+        <module name="mcdJervis" />
+        <module name="bgkBaggot" />
+        <module name="client" />
+        <module name="mcdStillorgan" />
+        <module name="broker" />
+        <module name="mcdTempleBar" />
+        <module name="McdFranchise" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="exception" target="8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="BgkFranchise" options="-parameters" />
+      <module name="McdFranchise" options="-parameters" />
+      <module name="bgkBaggot" options="-parameters" />
+      <module name="bgkGrafton" options="-parameters" />
+      <module name="broker" options="-parameters" />
+      <module name="client" options="-parameters" />
+      <module name="core" options="" />
+      <module name="mcdJervis" options="-parameters" />
+      <module name="mcdStillorgan" options="-parameters" />
+      <module name="mcdTempleBar" options="-parameters" />
+    </option>
+  </component>
+</project>
