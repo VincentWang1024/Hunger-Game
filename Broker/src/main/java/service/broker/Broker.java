@@ -1,4 +1,4 @@
-package service.bgkfranchise;
+package service.broker;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonArray;
@@ -6,12 +6,8 @@ import com.google.gson.JsonElement;
 import com.google.gson.reflect.TypeToken;
 import com.mongodb.MongoException;
 import com.mongodb.client.*;
-import com.mongodb.client.model.Projections;
-import com.mongodb.client.model.Sorts;
 import com.mongodb.client.result.InsertOneResult;
 import org.bson.Document;
-import org.bson.conversions.Bson;
-import org.json.JSONArray;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -24,7 +20,6 @@ import service.core.Quotation;
 import java.net.URISyntaxException;
 import java.util.*;
 
-import static com.mongodb.client.model.Filters.lt;
 import static org.bson.codecs.configuration.CodecRegistries.fromProviders;
 import static org.bson.codecs.configuration.CodecRegistries.fromRegistries;
 

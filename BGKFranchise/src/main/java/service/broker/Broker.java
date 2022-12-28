@@ -1,4 +1,4 @@
-package service.bgkfranchise;
+package service.broker;
 
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
@@ -21,9 +21,8 @@ import java.util.Map;
 public class Broker {
     Integer applicationNumber = 0;
     String[] URIs = new String[]{
-            "http://mcdJervis:8081/quotations/",
-            "http://mcdStillorgan:8082/quotations/",
-            "http://mcdTempleBar:8083/quotations/",
+            "http://bgkBaggot:8084/quotations/",
+            "http://bgkGrafton:8085/quotations/",
     };
 
     private Map<Integer, ClientAppliation> applications = new HashMap<>();
@@ -31,7 +30,7 @@ public class Broker {
     @RequestMapping(value="/applications",method= RequestMethod.POST)
     public ResponseEntity<ClientAppliation> createApplications() throws URISyntaxException {
             ArrayList<Quotation> list =  getQuotations();
-            ClientAppliation application = new ClientAppliation("MacDonald", applicationNumber++, list);
+            ClientAppliation application = new ClientAppliation("BurgerKing", applicationNumber++, list);
             applications.put(application.getApplicationNumber(), application);
             String path = ServletUriComponentsBuilder.fromCurrentContextPath().
                     build().toUriString()+ "/applications/"+application.getApplicationNumber();
@@ -71,4 +70,3 @@ public class Broker {
         static final long serialVersionUID = -7516152229878843037L;
     }
 }
-
