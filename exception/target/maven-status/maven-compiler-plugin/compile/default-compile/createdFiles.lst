@@ -1,6 +1,0 @@
-exception/ErrorResponse$ErrorResponseBuilder.class
-exception/GlobalErrorCode.class
-exception/InvalidUserNameException.class
-exception/InvalidLicenseNoException.class
-exception/ErrorResponse.class
-exception/SimpleBankingGlobalException.class
