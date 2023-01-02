@@ -66,7 +66,6 @@ public class Broker {
 
     @ResponseStatus(value = HttpStatus.NOT_FOUND)
     public class NoSuchApplicationException extends RuntimeException {
-//        static final long serialVersionUID = -6516152229878843037L;
         static final long serialVersionUID = -7516152229878843037L;
     }
 }

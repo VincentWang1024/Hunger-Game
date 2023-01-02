@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/hypermats-junction-basic/NgoClient.iml" filepath="$PROJECT_DIR$/hypermats-junction-basic/NgoClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NgoClient/hypermats-junction-basic.iml" filepath="$PROJECT_DIR$/NgoClient/hypermats-junction-basic.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Broker/hypermats-traffic-config.iml" filepath="$PROJECT_DIR$/Broker/hypermats-traffic-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mcdStiilorgan/mcdStiilorgan.iml" filepath="$PROJECT_DIR$/mcdStiilorgan/mcdStiilorgan.iml" />
+    </modules>
+  </component>
+</project>

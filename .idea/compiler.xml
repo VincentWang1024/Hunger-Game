@@ -11,14 +11,14 @@
         <module name="BgkFranchise" />
         <module name="mcdJervis" />
         <module name="bgkBaggot" />
-        <module name="client" />
         <module name="mcdStillorgan" />
         <module name="broker" />
-        <module name="mcdTempleBar" />
         <module name="McdFranchise" />
+        <module name="mcdTempleBar" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="client" target="1.8" />
       <module name="exception" target="8" />
     </bytecodeTargetLevel>
   </component>

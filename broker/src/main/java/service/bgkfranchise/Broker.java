@@ -4,6 +4,9 @@ import com.google.gson.Gson;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.reflect.TypeToken;
+import com.mongodb.BasicDBList;
+import com.mongodb.BasicDBObject;
+import com.mongodb.DBObject;
 import com.mongodb.MongoException;
 import com.mongodb.client.*;
 import com.mongodb.client.model.Projections;
@@ -85,7 +88,6 @@ public class Broker {
 
     public void requestHandler() {
         RestTemplate restTemplate = new RestTemplate();
-//        ArrayList<ClientAppliation> list = new ArrayList<>();
         HttpEntity request = new HttpEntity(null);
 
         applications = new ArrayList<>();
@@ -93,11 +95,15 @@ public class Broker {
 
         for (String uri: URIs) {
             ClientAppliation clientAppliation = restTemplate.postForObject(uri, request, ClientAppliation.class);
-//            list.add(clientAppliation);
             List<Quotation> list = clientAppliation.getList();
-            Gson gson = new Gson();
-            JsonElement element = gson.toJsonTree(list, new TypeToken<List<Quotation>>() {}.getType());
-            JsonArray jsonArray = element.getAsJsonArray();
+
+            List<Object> DBList = new BasicDBList();
+            for (Quotation q: list) {
+                DBObject qDBObject = new BasicDBObject();
+                qDBObject.put("branch", q.getBranch());
+                qDBObject.put("quantity", q.getQuantity());
+                DBList.add(qDBObject);
+            }
 
             applications.add(clientAppliation);
 
@@ -111,7 +117,7 @@ public class Broker {
                                     new Document()
                                     .append("franchiseName", clientAppliation.getFranchiseName())
                                     .append("appId", applicationNumber)
-                                    .append("foodInfo", jsonArray.toString())
+                                    .append("foodInfo", DBList)
                             );
                             System.out.println("Success! Inserted document id: " + result.getInsertedId());
                         } catch (MongoException me) {
@@ -124,7 +130,6 @@ public class Broker {
 
     @ResponseStatus(value = HttpStatus.NOT_FOUND)
     public class NoSuchApplicationException extends RuntimeException {
-//        static final long serialVersionUID = -6516152229878843037L;
         static final long serialVersionUID = -7516152229878843037L;
     }
 }
