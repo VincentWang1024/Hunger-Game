@@ -12,7 +12,7 @@
     <modules>
         <module>core</module>
         <module>mcdTempleBar</module>
-<!--        <module>client</module>-->
+        <module>client</module>
         <module>mcdJervis</module>
         <module>mcdStillorgan</module>
         <module>McdFranchise</module>

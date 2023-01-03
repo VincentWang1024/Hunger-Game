@@ -22,6 +22,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.client.RestTemplate;
 import service.core.ClientAppliation;
+import service.core.OrderConfirmation;
 import service.core.Quotation;
 
 import java.net.URISyntaxException;
@@ -130,6 +131,18 @@ public class Broker {
             }
         }
     }
+
+
+    @RequestMapping(value = "/confirmation", method = RequestMethod.GET)
+   	public ResponseEntity<OrderConfirmation> generateQuotations() {
+
+           String confirmationRequest = "Confirmation Received";
+           OrderConfirmation ordeerConfirmation = new OrderConfirmation();
+           ordeerConfirmation.setOrderConf(confirmationRequest);
+           //to mango to the franchise name - in that db we the
+           HttpHeaders headers = new HttpHeaders();
+           return new ResponseEntity<>(ordeerConfirmation, headers, HttpStatus.CREATED);
+       }
 
 
     @ResponseStatus(value = HttpStatus.NOT_FOUND)
