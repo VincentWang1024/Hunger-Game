@@ -28,6 +28,7 @@ import java.net.URISyntaxException;
 import java.util.*;
 
 import static com.mongodb.client.model.Filters.lt;
+import static com.mongodb.client.model.Sorts.ascending;
 import static org.bson.codecs.configuration.CodecRegistries.fromProviders;
 import static org.bson.codecs.configuration.CodecRegistries.fromRegistries;
 
@@ -53,7 +54,7 @@ public class Broker {
             MongoDatabase database = mongoClient.getDatabase("Hunger_Game");
             MongoCollection<Document> collection = database.getCollection("vendor");
 
-            MongoCursor<Document> cursor = collection.find().iterator();
+            MongoCursor<Document> cursor = collection.find().sort(ascending("appId")).iterator();
             try {
                 while(cursor.hasNext()) {
                     res.add(cursor.next());
@@ -61,8 +62,9 @@ public class Broker {
             } finally {
                 cursor.close();
             }
+
             HttpHeaders headers = new HttpHeaders();
-            return new ResponseEntity<>(res, headers, HttpStatus.CREATED);
+            return new ResponseEntity<>(res.subList(Math.max(res.size() - 2, 0), res.size()), headers, HttpStatus.CREATED);
         }
     }
 
@@ -81,8 +83,10 @@ public class Broker {
             } finally {
                 cursor.close();
             }
+
+//            Document uuRes= collection.find().sort(Sorts.descending("appId")).first();
             HttpHeaders headers = new HttpHeaders();
-            return new ResponseEntity<>(res, headers, HttpStatus.CREATED);
+            return new ResponseEntity<>(res.subList(Math.max(res.size() - 2, 0), res.size()), headers, HttpStatus.CREATED);
         }
     }
 
