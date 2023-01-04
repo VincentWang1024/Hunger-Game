@@ -36,7 +36,7 @@ mvn spring-boot:run
 
 ## Project Report 
 
-https://gitlab.com/comp30220/2022/hunger-game/-/blob/main/project%20report.pdf
+https://gitlab.com/comp30220/2022/hunger-game/-/blob/main/Project%20Report.pdf
 
 ## Demo Video
 
