@@ -16,10 +16,10 @@ This project utilizes a distributed system architecture with multiple microservi
 
 To run this project, we can clone the repository and navigate to the project's root directory. Run the following command to compile and run the project:
 
-~
+~~~
 mvn compile package
 docker-compose up --build
-~
+~~~
 
 Cloud service link: http://54.216.203.127:8080/applications 
 
@@ -29,10 +29,10 @@ copy this link to postman or browser and request food information.
 
 ## Client-side Usage
 
-~
+~~~
 cd client
 mvn spring-boot:run
-~
+~~~
 
 ## Project Report 
 
