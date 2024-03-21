@@ -33,11 +33,3 @@ copy this link to postman or browser and request food information.
 cd client
 mvn spring-boot:run
 ~~~
-
-## Project Report 
-
-https://gitlab.com/comp30220/2022/hunger-game/-/blob/main/Project%20Report.pdf
-
-## Demo Video
-
-https://drive.google.com/file/d/1P998Aiqomfe-RT-0rkRoBnfZoEn95Q_u/view?usp=sharing
