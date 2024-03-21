@@ -42,7 +42,7 @@ public class Broker {
             "http://bgkFranchise:8087/applications/",
     };
 
-    String config = "mongodb+srv://admin:admin@cluster0.ado3i.mongodb.net/Hunger_Game?retryWrites=true&w=majority";
+    // String config = "mongodb+srv://admin:admin@mongodb.net/Hunger_Game?retryWrites=true&w=majority";
 
 
     private List<ClientAppliation> applications;
