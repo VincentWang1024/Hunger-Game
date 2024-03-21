@@ -1,6 +1,6 @@
 # The Hunger Games
 
-Team members: Zhuqing Wang, Ayushi Agrawal, Ravi Raj Pedada, Deepesh Bathija
+Team members: Vincent Wang, Ayushi Agrawal, Ravi Raj Pedada, Deepesh Bathija
 
 ## Description
 
