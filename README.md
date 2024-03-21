@@ -25,8 +25,6 @@ Cloud service link: http://54.216.203.127:8080/applications
 
 copy this link to postman or browser and request food information.
 
-*NB: UCD campus wifi may not access this service with some unknown reasons.*
-
 ## Client-side Usage
 
 ~~~
